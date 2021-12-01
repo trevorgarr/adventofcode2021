@@ -1,6 +1,7 @@
 """
 Advent of Code Day 1:
 Submarine Depths
+Trevor Garrood
 """
 
 
@@ -21,7 +22,6 @@ def part_two(nums):
         if window_sums[j+1] - window_sums[j] > 0:
             count_increases += 1
     return count_increases
-
 
 
 if __name__ == "__main__":
