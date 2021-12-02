@@ -8,7 +8,7 @@ Trevor Garrood
 def part_one(nums):
     count_increases = 0
     for i in range(0, len(nums) - 1):
-        if int(nums[i+1]) - int(nums[i]) > 0:
+        if int(nums[i + 1]) - int(nums[i]) > 0:
             count_increases += 1
     return count_increases
 
@@ -17,9 +17,9 @@ def part_two(nums):
     count_increases = 0
     window_sums = []
     for i in range(0, len(nums) - 2):
-        window_sums.append(int(nums[i]) + int(nums[i+1]) + int(nums[i+2]))
+        window_sums.append(int(nums[i]) + int(nums[i + 1]) + int(nums[i + 2]))
     for j in range(0, len(window_sums) - 1):
-        if window_sums[j+1] - window_sums[j] > 0:
+        if window_sums[j + 1] - window_sums[j] > 0:
             count_increases += 1
     return count_increases
 
